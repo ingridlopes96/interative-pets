@@ -7,46 +7,45 @@
     font-size: 14px;
 }
 
-body{
+body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 60, 60);
+    background-color: rgb(243, 243, 243);
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
 }
 
-.interative-wrapper {
+.instagram-wrapper {
     display: flex;
     align-items: center;
     justify-content: start;
     width: 60%;
     height: 100vh;
-
 }
 
-.interative-phone{
+.instagram-phone {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
 }
 
-.interative-phone img {
+.instagram-phone img {
     height: 50rem;
 }
 
-.interative-continue {
+.instagram-continue {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
     flex-direction: column;
     width: 50%;
     min-height: 34rem;
 }
 
-.group{
+.group {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,18 +53,18 @@ body{
     background-color: #ffffff;
     width: 100%;
     padding: 1.3rem 0;
-    border: 1px solid rgb(70, 68, 68);
+    border: 1px solid lightgray;
 }
 
-.group:nth-child(1){
+.group:nth-child(1) {
     min-height: 19rem;
 }
 
-.logo-interative{
-    height: 6rem;
+.instagram-logo {
+    height: 3rem;
 }
 
-.profile-photo{
+.profile-photo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,21 +72,22 @@ body{
     overflow: hidden;
 }
 
-.profile-photo img{
+.profile-photo img {
     height: 6rem;
 }
 
-.interative-login {
+.instagram-login {
     background-color: #0095f6;
     color: #ffffff;
     padding: 8px;
     border-radius: 4px;
 }
 
-.interative-logout {
+.instagram-logout {
     color: #0095f6;
     margin-top: 1rem;
 }
+
 .not-account {
     color: rgb(160, 160, 160);
 }
@@ -127,30 +127,32 @@ body{
     background-image: url('./img/googleplay-button.png');
 }
 
-/* configuração responsiva -- media queries*/
+/* media queries */
+
 
 @media (max-width: 1024px) {
-    .interative-wrapper {
+    .instagram-wrapper {
         width: 90%;
     }
 }
-@media (max-width: 650px){
+
+@media (max-width: 650px) {
     body {
         background-color: #ffffff;
     }
 
-    .interative-wrapper{
+    .instagram-wrapper {
         width: 90%;
     }
 
-    .interative-phone{
+    .instagram-phone {
         display: none;
     }
-    
-    .interative-continue{
+
+    .instagram-continue {
         width: 100%;
     }
-
+    
     .group {
         border: 1px solid transparent;
     }
